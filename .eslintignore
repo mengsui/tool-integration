@@ -1,0 +1,9 @@
+/scripts
+/config
+/src/components/Scroll
+.history
+/src/utils
+.eslintrc.js
+.prettierrc
+.stylelintrc.js
+.umirc.ts

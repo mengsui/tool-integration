@@ -1,0 +1,59 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  outline-style: none;
+  list-style: none;
+}
+
+html,
+body {
+  background-color: #ffffff !important;
+}
+
+textarea,
+input {
+  display: block;
+  resize: none;
+  outline: none;
+  border: none;
+  background-color: transparent;
+  -webkit-appearance: none;
+  appearance: none;
+  border-radius: 0;
+}
+
+textarea::-webkit-input-placeholder,
+input::-webkit-input-placeholder {
+  color: #cbcbcb;
+}
+
+textarea::input-placeholder,
+input::input-placeholder {
+  color: #cbcbcb;
+}
+
+input:disabled,
+textarea:disabled {
+  -webkit-opacity: 1;
+  opacity: 1;
+}
+
+input.placeholder_em::-webkit-input-placeholder {
+  font-style: italic;
+}
+
+input.placeholder_em::input-placeholder {
+  font-style: italic;
+}
+
+.wechat_scroll {
+  width: 100%;
+  height: 100vh;
+}
+
+/* 提示框是否显示 */
+.ant-message {
+  display: none!important;
+}

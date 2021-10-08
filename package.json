@@ -1,0 +1,53 @@
+{
+  "private": true,
+  "scripts": {
+    "tel": "node scripts/wechatTel",
+    "start": "umi dev",
+    "build": "umi build",
+    "postinstall": "umi generate tmp",
+    "test": "umi-test",
+    "test:coverage": "umi-test --coverage",
+    "lint": "npm run lint:js && npm run lint:style && npm run lint:prettier",
+    "lint-staged": "lint-staged",
+    "lint-staged:js": "eslint --ext .js,.jsx,.ts,.tsx",
+    "lint:fix": "eslint --fix --cache --ext .js,.jsx,.ts,.tsx --format=pretty ./src && npm run lint:style",
+    "lint:js": "eslint --cache --ext .js,.jsx,.ts,.tsx --format=pretty ./src",
+    "lint:prettier": "check-prettier lint",
+    "lint:style": "stylelint --fix \"src/**/*.less\" --syntax less",
+    "prettier": "prettier -c --write \"**/*\""
+  },
+  "dependencies": {
+    "@ant-design/pro-layout": "^5.0.12",
+    "@types/js-cookie": "^2.2.6",
+    "@types/react-cookies": "^0.1.0",
+    "@umijs/fabric": "^2.2.2",
+    "@umijs/preset-react": "1.x",
+    "@umijs/test": "^3.2.6",
+    "ahooks": "^2.9.2",
+    "antd-mobile": "^2.3.3",
+    "check-prettier": "^1.0.3",
+    "husky": "^4.2.5",
+    "js-cookie": "^2.2.1",
+    "lint-staged": "^10.2.11",
+    "postcss-px-to-viewport": "^1.1.1",
+    "postcss-viewport-units": "^0.1.6",
+    "prettier": "^1.19.1",
+    "qs": "^6.9.6",
+    "react": "^16.12.0",
+    "react-cookies": "^0.1.1",
+    "react-dom": "^16.12.0",
+    "reconnecting-websocket": "^4.4.0",
+    "regenerator-runtime": "^0.13.7",
+    "stylelint": "^13.6.1",
+    "umi": "^3.2.6",
+    "weixin-js-sdk": "^1.6.0",
+    "yorkie": "^2.0.0"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^3.7.0",
+    "@typescript-eslint/parser": "^3.7.0",
+    "eslint": "^7.5.0",
+    "eslint-config-google": "^0.14.0",
+    "eslint-plugin-react": "^7.20.3"
+  }
+}
