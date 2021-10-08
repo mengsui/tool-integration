@@ -8,7 +8,6 @@
 const routers = [
   {
     path: '/',
-    wrappers: ['@/components/BluedotAuth/index'], // 授权、数据监测、获取用户信息、微信jssdk配置。
     component: '@/pages/test/index',
   },
   {
